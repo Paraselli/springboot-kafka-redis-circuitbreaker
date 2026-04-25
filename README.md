@@ -31,7 +31,7 @@ It is designed as a simple **Product Service** where product events are cached, 
 
 ## 🏗️ Architecture
 
-```text
+```text id="e5z2vz"
                         +-------------------+
                         |      Client       |
                         +---------+---------+
@@ -91,7 +91,7 @@ It is designed as a simple **Product Service** where product events are cached, 
 
 ## 📂 Project Structure
 
-```bash
+```bash id="m7h8l7"
 springboot-kafka-redis-circuitbreaker/
 │── src/main/java/com/example/demo
 │   ├── controller/
@@ -121,14 +121,14 @@ springboot-kafka-redis-circuitbreaker/
 
 ### 1️⃣ Clone Repository
 
-```bash
+```bash id="h5fq1t"
 git clone https://github.com/Paraselli/springboot-kafka-redis-circuitbreaker.git
 cd springboot-kafka-redis-circuitbreaker
 ```
 
 ### 2️⃣ Start Infrastructure
 
-```bash
+```bash id="6v62g6"
 docker-compose up -d
 ```
 
@@ -140,13 +140,13 @@ This starts:
 
 ### 3️⃣ Run Application
 
-```bash
+```bash id="1gqg0x"
 mvn spring-boot:run
 ```
 
 Application runs on:
 
-```bash
+```bash id="6evn6u"
 http://localhost:8080
 ```
 
@@ -156,13 +156,13 @@ http://localhost:8080
 
 ### ➕ Save Product
 
-```http
+```http id="3a8piv"
 POST /products
 ```
 
 #### Request Body
 
-```json
+```json id="a4l4h5"
 {
   "id": 1,
   "name": "iPhone 15",
@@ -179,13 +179,13 @@ POST /products
 
 ### 🔍 Get Product
 
-```http
+```http id="1i2r1x"
 GET /products/1
 ```
 
 #### Response
 
-```json
+```json id="y0x8yu"
 {
   "id": 1,
   "name": "iPhone 15",
@@ -199,7 +199,7 @@ GET /products/1
 
 If Redis is unavailable or product is missing:
 
-```json
+```json id="nqyn4r"
 {
   "id": 1,
   "name": "Default Product",
@@ -221,7 +221,7 @@ If Redis is unavailable or product is missing:
 
 ## 📦 Kafka Event Flow
 
-```text
+```text id="pbv48g"
 Product Created
      |
      v
@@ -252,7 +252,7 @@ This ensures the service remains stable even when dependencies fail.
 
 ## 🐳 Docker Services
 
-```yaml
+```yaml id="gkkhrf"
 Zookeeper : 2181
 Kafka     : 9092
 Redis     : 6379
@@ -286,7 +286,7 @@ Perfect for:
 
 ### Ram Paraselli
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/paraselli)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/ram-paraselli/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge\&logo=github)](https://github.com/Paraselli)
 
