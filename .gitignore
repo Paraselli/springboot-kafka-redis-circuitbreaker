@@ -30,3 +30,8 @@ build/
 ### OS ###
 .DS_Store
 Thumbs.db
+
+### Markdown ###
+*.md
+!README.md
+
